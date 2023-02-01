@@ -20,7 +20,7 @@ export default forwardRef(function TextInput(
                 id={id}
                 value={value}
                 className={
-                    `rounded-2xl bg-form-bg py-[13px] px-7 w-full focus:outline-alerange focus:outline-none` +
+                    `rounded-2xl bg-form-bg py-[13px] px-7 w-full ` +
                     className
                 }
                 ref={input}
