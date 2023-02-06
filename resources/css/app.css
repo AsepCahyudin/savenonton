@@ -1,8 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@use "input.css" as mat; 
 
 .flex::before,
-        .flex::after {
+.flex::after {
             display: none !important;
         }

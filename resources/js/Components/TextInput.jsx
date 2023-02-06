@@ -1,4 +1,4 @@
-import { forwardRef, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
 Input.propTypes = {
@@ -16,7 +16,7 @@ Input.propTypes = {
     isError: PropTypes.bool,
 };
 
-export default forwardRef(function TextInput({ 
+export default function Input({ 
     type = "text", 
     name, 
     id, 
@@ -29,11 +29,9 @@ export default forwardRef(function TextInput({
     isFocused, 
     handleChange, 
     placeholder, 
-    isError
-},
-    ref
-) {
-    const input = ref ? ref : useRef();
+    isError,
+}) {
+    const input = useRef();
 
     useEffect(() => {
         if (isFocused) {
@@ -48,7 +46,8 @@ export default forwardRef(function TextInput({
                 name={name}
                 id={id}
                 value={value}
-                className={`rounded-2xl bg-form-bg py-[13px] px-7 w-full input-${variant} ${className}`}
+                defaultValue={defaultValue}
+                className={`rounded-2xl bg-form-bg py-[13px] px-7 w-full ${isError && "input-error"} input-${variant} ${className}`}
                 ref={input}
                 autoComplete={autoComplete}
                 required={required}
@@ -57,4 +56,4 @@ export default forwardRef(function TextInput({
             />
         </div>
     );
-});
+}
