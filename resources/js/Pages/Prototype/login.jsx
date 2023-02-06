@@ -26,7 +26,7 @@ export default function Login(){
                             className="rounded-2xl bg-form-bg py-[13px] px-7 w-full focus:outline-alerange focus:outline-none"
                             placeholder="Email Address" /> */}
                         <Input type="email" name="email"
-                        
+                        className="rounded-2xl bg-form-bg py-[13px] px-7 w-full focus:outline-alerange focus:outline-none"
                             placeholder="Email Address"/>
                     </div>
                     <div>
