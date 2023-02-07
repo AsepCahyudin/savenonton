@@ -23,18 +23,11 @@ export default function Login(){
                 <div className="flex flex-col gap-6">
                     <div>
                         <Label forInput="email" value="Email Address" />
-                        {/* <input type="email" name="email"
-                            className="rounded-2xl bg-form-bg py-[13px] px-7 w-full focus:outline-alerange focus:outline-none"
-                            placeholder="Email Address" /> */}
-                        <Input type="email" name="email"
-                        className="rounded-2xl bg-form-bg py-[13px] px-7 w-full focus:outline-alerange focus:outline-none"
-                            placeholder="Email Address"/>
+                        <Input type="email" name="email" placeholder="Email Address"/>
                     </div>
                     <div>
                     <Label forInput="password" value="Password" />
-                        <input type="password" name="password"
-                            className="rounded-2xl bg-form-bg py-[13px] px-7 w-full focus:outline-alerange focus:outline-none"
-                            placeholder="Password" />
+                        <input type="password" name="password" placeholder="Password" />
                     </div>
                 </div>
                 <div className="grid space-y-[14px] mt-[30px]">
