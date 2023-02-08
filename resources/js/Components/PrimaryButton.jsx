@@ -1,3 +1,14 @@
+import React from 'react';
+import Proptypes from 'prop-types';
+
+Button.Proptypes = {
+    type: Proptypes.oneOf(["button", "submit", "reset"]),
+    className: Proptypes.string,
+    variant: Proptypes.oneOf(["primary", "warning", "danger", "light-outline", "white-outline",]),
+    processing:Proptypes.bool,
+    children: Proptypes.node,
+}
+
 export default function PrimaryButton({ 
  type = 'submit',
  className = '',
