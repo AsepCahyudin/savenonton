@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @use "input.css" as mat; 
-@import "button.css";
+@use "button.css" as mat;
 
 .flex::before,
 .flex::after {

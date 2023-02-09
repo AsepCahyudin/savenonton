@@ -1,4 +1,9 @@
-export default function SecondaryButton({ type = 'button', className = '', processing, children, onClick }) {
+export default function SecondaryButton({ 
+    type = 'button',
+    className = '',
+    processing,
+    children,
+    onClick }) {
     return (
         <button
             type={type}
