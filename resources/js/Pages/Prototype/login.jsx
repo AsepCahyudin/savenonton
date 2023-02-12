@@ -1,6 +1,7 @@
 import Input from '@/Components/TextInput';
 import Label from '@/Components/InputLabel';
 import Button from '@/Components/PrimaryButton';
+// import * as Button from 'react';
 import { Link } from '@inertiajs/inertia-react';
 
 export default function Login(){
