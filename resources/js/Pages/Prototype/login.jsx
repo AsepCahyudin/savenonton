@@ -45,7 +45,7 @@ export default function Login(){
                     
                     <Button type="button" variant="light-outline">
                         <span className="text-base text-white">
-                            Create New Account
+                            Create New Account 2
                         </span>
                     </Button>
                     
