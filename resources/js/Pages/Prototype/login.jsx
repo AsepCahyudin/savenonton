@@ -1,6 +1,6 @@
 import Input from '@/Components/TextInput';
-import Label from '@/Components/InputLabel';
-import Button from '@/Components/PrimaryButton';
+// import Label from '@/Components/InputLabel';
+// import Button from '@/Components/PrimaryButton';
 // import * as Button from 'react';
 import { Link } from '@inertiajs/inertia-react';
 
@@ -24,19 +24,22 @@ export default function Login(){
             </div>
             <form className="w-[370px]">
                 <div className="flex flex-col gap-6">
+                <div>
+                            <label class="text-base block mb-2">Email Address</label>
+                            <input type="email" name="email"
+                                class="rounded-2xl bg-form-bg py-[13px] px-7 w-full focus:outline-alerange focus:outline-none"
+                                placeholder="Email Address" />
+                        </div>
                     <div>
-                        <Label forInput="email" value="Email Address" />
-                        <Input type="email" name="email"
-                        placeholder="Email Address"/>
-                    </div>
-                    <div>
-                    <Label forInput="password" value="Password" />
-                        <Input type="password" name="password"
+                    <label class="text-base block mb-2">Password</label>
+                        <Input 
+                            type="password" 
+                        name="password"
                             placeholder="Password" />
                     </div>
                 </div>
                 <div className="grid space-y-[14px] mt-[30px]">
-                    <Button type="button" variant="primary">
+                    {/* <Button type="button" variant="primary">
                         <span className="text-base font-semibold">
                             Start Watching
                         </span>
@@ -47,7 +50,7 @@ export default function Login(){
                         <span className="text-base text-white">
                             Create New Account 2
                         </span>
-                    </Button>
+                    </Button> */}
                     
                 </div>
             </form>
