@@ -25,17 +25,19 @@ export default function Login(){
             <form className="w-[370px]">
                 <div className="flex flex-col gap-6">
                 <div>
+                    <label className="text-base block mb-2">Email Address
+                    </label>
+                    <Input type="email" name="email" placeholder="Email Address" />
+                </div>
+                <div>
                             <label class="text-base block mb-2">Email Address</label>
                             <input type="email" name="email"
                                 class="rounded-2xl bg-form-bg py-[13px] px-7 w-full focus:outline-alerange focus:outline-none"
                                 placeholder="Email Address" />
                         </div>
-                    <div>
-                    <label class="text-base block mb-2">Password</label>
-                        <Input 
-                            type="password" 
-                        name="password"
-                            placeholder="Password" />
+                <div>
+                    <label className="text-base block mb-2">Password</label>
+                        <Input type="password" name="password" placeholder="Password" />
                     </div>
                 </div>
                 <div className="grid space-y-[14px] mt-[30px]">

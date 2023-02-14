@@ -19,11 +19,11 @@ Input.propTypes = {
 export default function Input({ 
     type = "text", 
     name, 
-    id, 
+    // id, 
     value, 
     defaultValue, 
     className, 
-    variant ="primary" , 
+    variant ="focus:outline-alerange focus:outline-none" , 
     autoComplete, 
     required, 
     isFocused, 
@@ -44,10 +44,10 @@ export default function Input({
             <input
                 type={type}
                 name={name}
-                id={id}
+                // id={id}
                 value={value}
                 defaultValue={defaultValue}
-                className={`rounded-4xl bg-form-bg py-[13px] px-7 w-full ${isError && "input-error"} input-${variant} ${className}`}
+                className={`rounded-2xl bg-form-bg py-[13px] px-7 w-full ${variant} }`}
                 ref={input}
                 autoComplete={autoComplete}
                 required={required}
